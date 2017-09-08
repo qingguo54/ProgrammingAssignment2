@@ -1,7 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These twos functions will output the inverse of an input matrix.
+## cached method applied for these functions to improve the performance when
+## same matrix input
 
-## Write a short comment describing this function
+## This makeCacheMatrix class includes 4 main methods which are:
+## $set: set x as input matrix
+## $get: get the matrix x 
+## $setInverse : set the i which is the inverse of matrix x
+## $getInverse : return the inverse of x
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -18,7 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function is to get the inverse of matrix x.
+## if i is not null, will return i, if not, will use the solve function
+## to get the inverse then call the setInverse funtion to store i
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
